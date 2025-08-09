@@ -22,7 +22,7 @@ function App() {
           <h1 className="hero-title">Hello, I'm Divya Sivamurugan</h1>
           <p className="hero-subtitle">Software Developer & Problem Solver</p>
           <p className="hero-description">
-            Passionate about creating innovative solutions and building impactful applications
+            An agentic AI learner and practitioner passionate about integrating AI into engineering workflows.
           </p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
@@ -37,9 +37,10 @@ function App() {
           <h2 className="section-title">About Me</h2>
           <div className="about-content">
             <p>
-              I'm a dedicated software developer with experience in building web applications,
-              working with modern technologies, and solving complex problems. I enjoy learning
-              new technologies and applying them to create meaningful solutions.
+              I'm a dedicated software developer and lead engineer with experience in building web applications,
+              working with modern technologies, and solving complex problems. As a lead engineer, I guide and mentor 
+              development teams in creating robust web applications. I enjoy learning new technologies and applying 
+              them to create meaningful solutions.
             </p>
             <p>
               Currently working on various projects including RAG document assistants,
@@ -143,10 +144,10 @@ function App() {
               <a href="https://github.com/divyasivamurugan" target="_blank" rel="noopener noreferrer" className="contact-link">
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/divyasivamurugan" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a href="https://www.linkedin.com/in/divya-sivamurugan-8333032b/" target="_blank" rel="noopener noreferrer" className="contact-link">
                 LinkedIn
               </a>
-              <a href="mailto:divya@example.com" className="contact-link">
+              <a href="mailto:divvy13@gmail.com" className="contact-link">
                 Email
               </a>
             </div>
