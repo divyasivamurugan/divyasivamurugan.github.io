@@ -20,9 +20,9 @@ function App() {
       <section id="hero" className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Hello, I'm Divya Sivamurugan</h1>
-          <p className="hero-subtitle">Lead Product Software Engineer & Enterprise Solutions Architect</p>
+          <p className="hero-subtitle">Lead Product Engineer & AI Solutions Architect</p>
           <p className="hero-description">
-            14+ years of experience creating enterprise engineering products. An agentic AI learner and practitioner 
+            15 years of experience creating enterprise engineering products. An agentic AI learner and practitioner 
             passionate about integrating AI into engineering workflows while guiding teams to deliver scalable solutions.
           </p>
           <div className="hero-buttons">
@@ -38,23 +38,24 @@ function App() {
           <h2 className="section-title">About Me</h2>
           <div className="about-content">
             <p>
-              I am a lead product software engineer with 14+ years of experience creating enterprise engineering products 
-              and building sophisticated software applications. I work closely with stakeholders to ensure successful 
-              product deliverables and drive product success through technical excellence and strategic collaboration. 
-              I have worked with architects and been involved in designing product capabilities, contributing significantly 
-              towards the overall design and architecture decisions.
+              Pragmatic engineer with 15 years of experience in building world‑class products, with deep expertise in Azure AI and Generative AI.
+              I design agentic systems, optimize agent behaviors, and integrate intelligent, scalable solutions that transform enterprise operations.
             </p>
             <p>
-              My primary objective is guiding development teams in delivering robust, scalable enterprise products that make 
-              a meaningful impact. I participate in customer demos and meetings to gather requirements alongside product owners, 
-              ensuring that our engineering solutions align with business objectives and customer needs. I have provided many 
-              customer demos and supported sales initiatives, effectively bridging the gap between technical capabilities and 
-              business value.
+              I’m passionate about mentoring teams, fostering innovation, and bridging research with engineering to create resilient, AI‑driven systems.
+              I guide cross‑functional teams through the full product lifecycle and deliver customer‑centric solutions.
             </p>
             <p>
-              Currently working on various projects including RAG document assistants,
-              web applications, and exploring the latest in AI and machine learning technologies.
+              Recent impact: built a FastAPI‑based RAG app leveraging ChromaDB and Azure OpenAI; promoted AI‑assisted SDLC with GitHub Copilot and Cursor
+              increasing team productivity by ~50%; used AI‑augmented code reviews to reduce post‑release defects by ~20%; and supported sales with
+              product demos showcasing AI capabilities.
             </p>
+            <ul className="resume-list">
+              <li>Built FastAPI-based RAG with ChromaDB + Azure OpenAI for intelligent document processing.</li>
+              <li>Scaled AI-assisted SDLC with GitHub Copilot and Cursor; boosted team productivity by ~50%.</li>
+              <li>Drove AI-augmented code reviews; reduced post-release defects by ~20%.</li>
+              <li>Architected and deployed microservices across Azure Functions, Container Apps, and AKS.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -147,6 +148,8 @@ function App() {
                 <span className="skill-tag">Hibernate</span>
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">FastAPI</span>
+                <span className="skill-tag">LangChain</span>
+                <span className="skill-tag">LangGraph</span>
                 <span className="skill-tag">Streamlit</span>
               </div>
             </div>
@@ -154,10 +157,10 @@ function App() {
               <h3>Cloud & DevOps</h3>
               <div className="skill-tags">
                 <span className="skill-tag">Azure</span>
-                <span className="skill-tag">Git</span>
+                <span className="skill-tag">Google Cloud</span>
                 <span className="skill-tag">Azure DevOps</span>
                 <span className="skill-tag">Docker</span>
-                <span className="skill-tag">VS Code</span>
+                <span className="skill-tag">Git</span>
               </div>
             </div>
             <div className="skill-category">
@@ -165,25 +168,29 @@ function App() {
               <div className="skill-tags">
                 <span className="skill-tag">PostgreSQL</span>
                 <span className="skill-tag">MongoDB</span>
+                <span className="skill-tag">ChromaDB</span>
               </div>
             </div>
             <div className="skill-category">
               <h3>Messaging & Integration</h3>
               <div className="skill-tags">
-                <span className="skill-tag">Apache Pulsar</span>
-                <span className="skill-tag">Dapr</span>
+                <span className="skill-tag">Apache Kafka</span>
               </div>
             </div>
             <div className="skill-category">
               <h3>AI & Machine Learning</h3>
               <div className="skill-tags">
                 <span className="skill-tag">Azure OpenAI</span>
+                <span className="skill-tag">Vertex AI</span>
+                <span className="skill-tag">Embeddings</span>
                 <span className="skill-tag">RAG (Retrieval-Augmented Generation)</span>
                 <span className="skill-tag">ChromaDB</span>
                 <span className="skill-tag">Vector Databases</span>
                 <span className="skill-tag">LLMs</span>
                 <span className="skill-tag">AI Integration</span>
                 <span className="skill-tag">GitHub Copilot</span>
+                <span className="skill-tag">MCP</span>
+                <span className="skill-tag">Copilot Studio</span>
               </div>
             </div>
             <div className="skill-category">
@@ -216,6 +223,8 @@ function App() {
               <a href="mailto:divvy13@gmail.com" className="contact-link">
                 Email
               </a>
+              <a href="tel:+918939914744" className="contact-link">Phone</a>
+              <span className="contact-link" aria-hidden>Chennai</span>
             </div>
           </div>
         </div>
