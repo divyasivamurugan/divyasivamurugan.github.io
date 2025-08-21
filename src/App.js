@@ -45,17 +45,6 @@ function App() {
               I’m passionate about mentoring teams, fostering innovation, and bridging research with engineering to create resilient, AI‑driven systems.
               I guide cross‑functional teams through the full product lifecycle and deliver customer‑centric solutions.
             </p>
-            <p>
-              Recent impact: built a FastAPI‑based RAG app leveraging ChromaDB and Azure OpenAI; promoted AI‑assisted SDLC with GitHub Copilot and Cursor
-              increasing team productivity by ~50%; used AI‑augmented code reviews to reduce post‑release defects by ~20%; and supported sales with
-              product demos showcasing AI capabilities.
-            </p>
-            <ul className="resume-list">
-              <li>Built FastAPI-based RAG with ChromaDB + Azure OpenAI for intelligent document processing.</li>
-              <li>Scaled AI-assisted SDLC with GitHub Copilot and Cursor; boosted team productivity by ~50%.</li>
-              <li>Drove AI-augmented code reviews; reduced post-release defects by ~20%.</li>
-              <li>Architected and deployed microservices across Azure Functions, Container Apps, and AKS.</li>
-            </ul>
           </div>
         </div>
       </section>
