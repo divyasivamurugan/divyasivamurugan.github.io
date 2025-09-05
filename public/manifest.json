@@ -1,6 +1,6 @@
 {
-  "short_name": "Divya Portfolio",
-  "name": "Divya Sivamurugan - Software Developer Portfolio",
+  "short_name": "Divya S",
+  "name": "Divya Sivamurugan - AI/ML Engineer & Solutions Architect",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#2c3e50",
+  "background_color": "#f8f9fa"
 }
