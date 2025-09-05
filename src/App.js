@@ -36,7 +36,7 @@ const portfolioData = {
      {
       title: "Cloud-Based Document Services for Legal and Spend Management Workflows",
       description: "Designed and deployed cloud-native microservices to support document operations for legal and spend management applications. These services integrate with enterprise document management systems, enabling secure, scalable, and efficient handling of business-critical documents. The solution established architectural standards for intelligent document workflows across the organization.",
-      technologies: ["Python", "FastAPI", "ChromaDB", "Azure OpenAI", "LangChain", "LangGraph", "Docker"],
+      technologies: ["Java", "Spring Boot", "PostgreSQL", "Azure", "Apache Kafka", "Kubernetes", "Docker"],
       highlights: [
         "Architected and delivered production-grade microservices for document operations",
         "Implemented DevOps pipelines for automated build, test, and deployment workflows",
