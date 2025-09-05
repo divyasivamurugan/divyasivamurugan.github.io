@@ -16,87 +16,45 @@ const portfolioData = {
   summary: "Highly innovative and pragmatic engineer with 15 years of experience in building world-class products. Deep expertise in Azure AI and Generative AI, specializing in designing advanced agentic systems, optimizing agent behaviors, and seamlessly integrating intelligent, scalable solutions to transform enterprise operations.",
   experience: [
     {
-      period: "Jan 2025 - Present",
+      period: "October 2010 - Present",
       role: "Lead Product Engineer & AI Solutions Architect",
-      company: "Wolters Kluwer Elm Solutions",
-      location: "Chennai",
-      description: "Leading end-to-end design and development of GenAI applications with focus on RAG and adaptive prompting strategies.",
+      company: "Verizon • Wolters Kluwer Elm Solutions • Personal Projects",
+      description: "GenAI applications development with focus on RAG and adaptive prompting strategies.",
       achievements: [
-        "Led GenAI application development using Python and Java with RAG and adaptive prompting",
-        "Engineered robust prompt workflows including chaining and dynamic tool calling using MCP",
+        "Led the design and implementation of document management system integrations, executing full document management capabilities across multiple platforms (Alfresco, FileNet, SharePoint, eDocs, and iManage) through 10+ release cycles",
+        "GenAI application development using Python with RAG and adaptive prompting",
         "Developed semantic search capabilities using ChromaDB and embedding models",
         "Integrated AI capabilities into product workflows enhancing customer experience",
-        "Implemented Azure DevOps pipelines for consistent deployments across environments"
-      ]
-    },
-    {
-      period: "Apr 2021 - Dec 2024",
-      role: "Lead Software Engineer",
-      company: "Wolters Kluwer Elm Solutions",
-      location: "Chennai",
-      description: "Architected and deployed microservices across diverse Azure workloads, establishing MLOps frameworks and engineering excellence.",
-      achievements: [
-        "Pioneered organization's first enterprise-grade RAG platform on FastAPI, ChromaDB, Azure OpenAI",
-        "Reduced manual document handling by 80% through automation",
-        "Implemented MLOps framework with AI-powered code reviews reducing defects by 20%",
-        "Led 20+ member engineering team adopting AI-assisted development tools",
-        "Boosted team productivity by over 50% through standardized best practices"
-      ]
-    },
-    {
-      period: "Apr 2016 - Mar 2021",
-      role: "Senior Software Engineer",
-      company: "Wolters Kluwer Elm Solutions",
-      location: "Chennai",
-      description: "Designed Spring Boot microservices and improved system performance while leading architectural initiatives.",
-      achievements: [
-        "Designed and implemented Spring Boot microservices architecture",
-        "Improved system performance by 30% via JVM, SQL, and Redis optimizations",
-        "Deployed Docker containers on Kubernetes using Azure DevOps and Bitbucket",
-        "Secured APIs with OAuth2, JWT, and RBAC (OWASP compliant)",
-        "Led code reviews and mentored junior developers"
-      ]
-    },
-    {
-      period: "Apr 2014 - Mar 2016",
-      role: "Software Engineer",
-      company: "Datacert Inc",
-      location: "Chennai",
-      description: "Developed enterprise applications and migrated legacy systems to modern architectures.",
-      achievements: [
-        "Developed reusable components using Java, RESTful APIs, JQuery, and Spring",
-        "Migrated legacy .NET application to Java-based architecture",
-        "Ensured complete unit test coverage for continuous integration",
-        "Practiced Agile Scrum with active participation in sprint ceremonies"
-      ]
-    },
-    {
-      period: "Oct 2010 - Mar 2013",
-      role: "Analyst - System Development",
-      company: "Verizon Data Services Pvt Ltd",
-      location: "Chennai",
-      description: "Developed maintenance systems and fault-tolerant applications while mentoring junior developers.",
-      achievements: [
-        "Developed maintenance ticketing system using Spring framework and RESTful services",
-        "Built fault-tolerant system for network monitoring and management",
-        "Mentored junior team members on technical best practices",
-        "Boosted workflow efficiency by 10% through strategic refactoring",
-        "Contributed to testing efforts using JUnit and Mockito"
+        "Implemented Azure DevOps pipelines for consistent deployments across environments",
+        "Engineered comprehensive MLOps frameworks with automated model deployment pipelines, monitoring, and lifecycle management for production-scale machine learning systems",
+        "Architected scalable microservices solutions for enterprise-level applications",
+        "Delivered innovative solutions across telecommunications and legal technology domains"
       ]
     }
   ],
   projects: [
-    {
+     {
       title: "Enterprise RAG Platform Architecture",
-      description: "Pioneered organization's first enterprise-grade Retrieval-Augmented Generation (RAG) platform, establishing architectural standards for intelligent document processing across the business.",
+      description: "Pioneered  enterprise-grade Retrieval-Augmented Generation (RAG) platform, establishing architectural standards for intelligent document processing across the business.",
       technologies: ["Python", "FastAPI", "ChromaDB", "Azure OpenAI", "LangChain", "LangGraph", "Docker"],
       highlights: [
-        "First enterprise-grade RAG platform in organization",
         "Established technical roadmap for future GenAI applications",
         "Built on FastAPI, ChromaDB, and Azure OpenAI stack",
         "Set architectural standards for intelligent document processing"
       ],
       status: "Production",
+      category: "Cloud Architecture"
+    },
+    {
+      title: "Enterprise RAG Platform Architecture",
+      description: "Pioneered  enterprise-grade Retrieval-Augmented Generation (RAG) platform, establishing architectural standards for intelligent document processing across the business.",
+      technologies: ["Python", "FastAPI", "ChromaDB", "Azure OpenAI", "LangChain", "LangGraph", "Docker"],
+      highlights: [
+        "Established technical roadmap for future GenAI applications",
+        "Built on FastAPI, ChromaDB, and Azure OpenAI stack",
+        "Set architectural standards for intelligent document processing"
+      ],
+      status: "Personal Project",
       category: "AI/ML Architecture"
     },
     {
@@ -109,53 +67,22 @@ const portfolioData = {
         "Complete model lifecycle management with automated monitoring",
         "Enterprise-scale reliability and security compliance"
       ],
-      status: "Production",
+      status: "Personal Project",
       category: "MLOps"
-    },
-    {
-      title: "Agentic AI Systems with Dynamic Tool Calling",
-      description: "Developed sophisticated agent-based systems using Model Context Protocol (MCP) for dynamic tool calling and prompt chaining workflows.",
-      technologies: ["Python", "LangChain", "LangGraph", "MCP", "Azure OpenAI", "Semantic Kernel"],
-      highlights: [
-        "Advanced prompt chaining and dynamic tool calling",
-        "Agent-based systems for complex workflow automation",
-        "Context-aware retrieval with semantic search",
-        "Integrated Model Context Protocol for enhanced capabilities"
-      ],
-      status: "Production",
-      category: "Agentic AI"
-    },
-    {
-      title: "Azure Microservices Architecture",
-      description: "Architected and deployed scalable microservices across Azure Functions, Container Apps, and AKS, optimizing for resilience and cost-efficiency.",
-      technologies: ["Java", "Spring Boot", "Azure Functions", "Azure Container Apps", "AKS", "Docker"],
-      highlights: [
-        "80% reduction in manual document handling through automation",
-        "30% performance improvement via JVM, SQL, and Redis optimization",
-        "OAuth2, JWT, and RBAC security implementation (OWASP compliant)",
-        "Robust CI/CD pipelines with Azure DevOps"
-      ],
-      status: "Production",
-      category: "Cloud Architecture"
-    }
+    },   
   ],
-  skills: {
-    "AI/ML Architecture": [
-      "Agentic AI Systems", "Distributed Systems Design", "LLM Integration", "RAG Patterns", 
-      "Service-Oriented Architecture", "LangChain", "LangGraph", "Semantic Kernel", 
-      "AI Governance & Security", "Model Context Protocol (MCP)"
-    ],
+  skills: {  
     "Cloud & MLOps Infrastructure": [
-      "Azure (Expert)", "Azure ML", "Databricks", "Vertex AI", "SageMaker", "GCP", "AWS", 
+      "Azure", "Azure ML", "Databricks", "Vertex AI", "SageMaker", 
       "Kubernetes", "Docker", "Terraform", "CI/CD (GitHub Actions)", "Azure DevOps", "Observability"
     ],
     "Programming & Frameworks": [
       "Python", "Java", "Groovy", "FastAPI", "Spring Boot", "Streamlit", "Hibernate", 
-      "RESTful APIs", "Microservices", "OAuth2", "JWT", "RBAC"
+      "RESTful APIs", "Microservices", "OAuth2", "RBAC"
     ],
     "Data Platforms & Integration": [
-      "Vector Databases (ChromaDB, Pinecone, Weaviate)", "PostgreSQL", "MongoDB", 
-      "Apache Kafka", "Feature Stores", "Data Orchestration", "Real-Time Inference",
+      "Vector Databases (ChromaDB)", "PostgreSQL", "MongoDB", 
+      "Apache Kafka", "Data Orchestration", "Real-Time Inference",
       "SonarQube", "Black Duck"
     ]
   },
