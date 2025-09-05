@@ -34,13 +34,13 @@ const portfolioData = {
   ],
   projects: [
      {
-      title: "Enterprise RAG Platform Architecture",
-      description: "Pioneered  enterprise-grade Retrieval-Augmented Generation (RAG) platform, establishing architectural standards for intelligent document processing across the business.",
+      title: "Cloud-Based Document Services for Legal and Spend Management Workflows",
+      description: "Designed and deployed cloud-native microservices to support document operations for legal and spend management applications. These services integrate with enterprise document management systems, enabling secure, scalable, and efficient handling of business-critical documents. The solution established architectural standards for intelligent document workflows across the organization.",
       technologies: ["Python", "FastAPI", "ChromaDB", "Azure OpenAI", "LangChain", "LangGraph", "Docker"],
       highlights: [
-        "Established technical roadmap for future GenAI applications",
-        "Built on FastAPI, ChromaDB, and Azure OpenAI stack",
-        "Set architectural standards for intelligent document processing"
+        "Architected and delivered production-grade microservices for document operations",
+        "Implemented DevOps pipelines for automated build, test, and deployment workflows",
+        "Deployed containerized services in Azure for scalability and maintainability"
       ],
       status: "Production",
       category: "Cloud Architecture"
