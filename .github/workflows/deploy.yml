@@ -38,6 +38,12 @@ jobs:
       - name: Build React app
         run: npm run build
         
+      - name: Ensure CNAME file exists in build
+        run: |
+          if [ ! -f build/CNAME ]; then
+            echo "divyas.dev" > build/CNAME
+          fi
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
