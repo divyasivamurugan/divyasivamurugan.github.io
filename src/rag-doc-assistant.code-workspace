@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../OASIS/Projects/rag-doc-assistant"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../OASIS/Projects/unit-test-agent"
+		}
+	],
+	"settings": {}
+}
