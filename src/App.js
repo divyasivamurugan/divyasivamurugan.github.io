@@ -161,6 +161,14 @@ const portfolioData = {
   },
   certifications: [
     {
+      title: "End-to-end machine learning operations (MLOps) with Azure Machine Learning",
+      issuer: "Microsoft Learn",
+      date: "2024",
+      description: "Comprehensive certification covering MLOps practices, Azure ML pipelines, model deployment, and monitoring in production environments.",
+      image: "/Microsoft_ML_OPS_Certification.png",
+      credentialUrl: "https://learn.microsoft.com/en-us/training/paths/build-ai-solutions-with-azure-ml-service/"
+    },
+    {
       title: "Azure Kubernetes Service (AKS)",
       issuer: "LinkedIn Learning",
       date: "2023",
@@ -187,7 +195,7 @@ function App() {
   // Smooth scrolling and active section tracking
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'contact'];
+      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'education', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -219,7 +227,7 @@ function App() {
         <div className="nav-container">
           <div className="nav-logo">{portfolioData.personal.name}</div>
           <ul className="nav-menu">
-            {['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'contact'].map(section => (
+            {['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'education', 'contact'].map(section => (
               <li key={section}>
                 <button
                   className={`nav-link ${activeSection === section ? 'active' : ''}`}
@@ -397,35 +405,50 @@ function App() {
       <section id="certifications" className="certifications">
         <div className="container">
           <h2 className="section-title">Professional Certifications</h2>
-          <div className="certs-grid">
+          <div className="certifications-list">
             {portfolioData.certifications.map((cert, index) => (
-              <div key={index} className="cert-card">
+              <div key={index} className="certification-item">
                 {cert.image && (
-                  <div className="cert-image">
+                  <div className="certification-badge">
                     <img src={cert.image} alt={cert.title} />
                   </div>
                 )}
-                <div className="cert-details">
-                  <h3>{cert.title}</h3>
-                  <h4>{cert.issuer}</h4>
-                  <div className="cert-date">{cert.date}</div>
-                  {cert.credentialId && (
-                    <div className="cert-id">ID: {cert.credentialId}</div>
+                <div className="certification-content">
+                  <div className="certification-header">
+                    <h3>{cert.title}</h3>
+                    <div className="certification-year">{cert.date}</div>
+                  </div>
+                  <h4 className="certification-issuer">{cert.issuer}</h4>
+                  <p className="certification-description">{cert.description}</p>
+                  {cert.credentialUrl && (
+                    <a 
+                      href={cert.credentialUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="certification-link"
+                    >
+                      View Credential →
+                    </a>
                   )}
-                  <p>{cert.description}</p>
                 </div>
               </div>
             ))}
           </div>
-          
-          {/* Education Section */}
-          <div className="education-section">
-            <h3 className="education-title">Education</h3>
-            <div className="education-card">
-              <h4>{portfolioData.education.degree}</h4>
-              <h5 className="education-institution">{portfolioData.education.institution}</h5>
-              <div className="education-period">{portfolioData.education.period}</div>
-              <div className="education-location">{portfolioData.education.location}</div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="education">
+        <div className="container">
+          <h2 className="section-title">Education</h2>
+          <div className="education-item">
+            <div className="education-content">
+              <h3>{portfolioData.education.degree}</h3>
+              <h4 className="education-institution">{portfolioData.education.institution}</h4>
+              <div className="education-meta">
+                <span className="education-period">{portfolioData.education.period}</span>
+                <span className="education-location">{portfolioData.education.location}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -456,13 +479,6 @@ function App() {
                 📧 {portfolioData.personal.email}
               </a>
               <a 
-                href={`tel:${portfolioData.personal.phone}`}
-                className="contact-link"
-                aria-label="Call phone number"
-              >
-                📞 {portfolioData.personal.phone}
-              </a>
-              <a 
                 href={portfolioData.personal.linkedin} 
                 className="contact-link"
                 target="_blank"
@@ -481,13 +497,12 @@ function App() {
                 🔗 GitHub
               </a>
               <a 
-                href={portfolioData.personal.website} 
+                href="/Divya%20Sivamurugan%20-%20AI_ML%20Ops.pdf" 
                 className="contact-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Personal website"
+                download
+                aria-label="Download resume"
               >
-                🌐 divyas.dev
+                📄 Resume (PDF)
               </a>
             </div>
           </div>

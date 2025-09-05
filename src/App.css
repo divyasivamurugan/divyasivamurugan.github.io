@@ -877,133 +877,163 @@ h3.timeline-role {
 
 /* Certifications Section */
 .certifications {
-  background: #f8f9fa;
-  text-align: left;
+  background: #f8f9fa !important;
+  background-image: none !important;
+  background-color: #f8f9fa !important;
 }
 
-.certifications-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 2.5rem;
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
-.certification-card {
+.certification-item {
   background: white;
   padding: 2.5rem;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  flex-direction: row;
+  gap: 2rem;
   align-items: flex-start;
-  text-align: left;
-  gap: 1.5rem;
 }
 
-.certification-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+.certification-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-.certification-image {
+.certification-badge {
   flex-shrink: 0;
   width: 120px;
 }
 
-.certification-image img {
+.certification-badge img {
   width: 100%;
   height: auto;
   max-height: 120px;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   object-fit: contain;
 }
 
-.certification-details {
+.certification-content {
   flex: 1;
-  text-align: left;
 }
 
-.certification-details h3 {
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+
+.certification-header h3 {
   color: #2c3e50;
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.certification-year {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  white-space: nowrap;
 }
 
 .certification-issuer {
   color: #7f8c8d;
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.certification-id {
-  color: #95a5a6;
-  font-size: 0.9rem;
-  font-family: monospace;
-  margin-bottom: 0.5rem;
-}
-
-.certification-date {
-  color: #2c3e50;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
 }
 
 .certification-description {
   color: #666;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.certification-link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #2c3e50;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.certification-link:hover {
+  background: #2c3e50;
+  color: white;
+  transform: translateY(-2px);
 }
 
 /* Education Section */
-.education-section {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ecf0f1;
+.education {
+  background: #ffffff;
 }
 
-.education-title {
-  color: #2c3e50;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  font-size: 1.8rem;
-}
-
-.education-card {
+.education-item {
   background: white;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 3px solid #ecf0f1;
+  max-width: 600px;
+  margin: 2rem auto 0;
 }
 
-.education-card h4 {
+.education-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.education-content h3 {
   color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
-  font-size: 1.3rem;
 }
 
 .education-institution {
   color: #7f8c8d;
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.8rem;
+  margin: 0 0 1rem 0;
+}
+
+.education-meta {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .education-period {
   color: #2c3e50;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  background: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
 }
 
 .education-location {
-  color: #95a5a6;
+  color: #7f8c8d;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 /* Footer */
@@ -1152,6 +1182,7 @@ h3.timeline-role {
 }
 
 @media (max-width: 768px) {
+  
   .nav-menu {
     flex-direction: column;
     gap: 1rem;
@@ -1214,19 +1245,27 @@ h3.timeline-role {
     gap: 2rem;
   }
   
-  .certifications-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .certification-card {
+  .certification-item {
     flex-direction: column;
-    text-align: left;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 2rem;
   }
   
-  .certification-image {
+  .certification-badge {
     width: 100px;
-    align-self: flex-start;
+    align-self: center;
+  }
+  
+  .certification-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .education-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
   }
   
   .contact-links {
@@ -1350,10 +1389,8 @@ h3.timeline-role {
 
 /* Enhanced Navigation */
 .nav-logo {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #2c3e50;
+  font-weight: bold;
 }
 
 .navbar {
@@ -1372,7 +1409,7 @@ h3.timeline-role {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #2c3e50;
   transition: width 0.3s ease;
 }
 
@@ -1382,10 +1419,7 @@ h3.timeline-role {
 
 /* Enhanced Hero */
 .hero-subtitle {
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ecf0f1;
   font-weight: 600;
 }
 
@@ -1426,19 +1460,19 @@ h3.timeline-role {
 }
 
 .skill-category.highlight {
-  background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+  background: #f8f9fa;
   padding: 1.5rem;
   border-radius: 15px;
-  border: 2px solid #3498db20;
+  border: 2px solid #ecf0f1;
 }
 
 .skill-category.highlight h3 {
-  color: #3498db;
+  color: #2c3e50;
 }
 
 /* New Skill Tags */
 .skill-tag.new {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  background: #2c3e50;
   color: white;
   position: relative;
 }
@@ -1466,7 +1500,7 @@ h3.timeline-role {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #2c3e50;
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
